@@ -6,24 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Aj Protfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS  -->
   <link rel="stylesheet" href="./stylesheet.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- BOX ICONS  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Typed.js  -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
-  <header class="header1">
-    <a href="#" class="logo">Aj-Portfolio</a>
+
+  <header class="header" id="header">
+    <a href="#" class="logo">
+      <!-- <video autoplay loop muted playsinline>
+        <source src="./resources/aj-logo.mp4" type="video/mp4">
+      </video> -->
+    </a>
+    <i class="fa-solid fa-bars fa-flip" id="menu-icon"></i>
     <nav class="navbar">
       <a href="#home" style="--i:1" class="active">Home</a>
       <a href="#about" style="--i:2">About</a>
+      <a href="#services" style="--i:3">Services</a>
       <a href="#skills" style="--i:3">Skills</a>
       <a href="#projects" style="--i:4">Projects</a>
       <a href="#contact" style="--i:5">Contact</a>
     </nav>
   </header>
 
-  <section class="home">
+  <section class="home" id="home">
     <div class="home-content">
       <h3>Hello, It's Me
         <h1>Ajjayyaswamy S M</h1>
@@ -38,13 +59,18 @@
           <a href="0" style="--i:9"><i class="bx bxl-instagram-alt"></i></a>
           <a href="0" style="--i:10"><i class="bx bxl-whatsapp-square"></i></a>
         </div>
-        <div><a href="0" class="btn-box">More About Me</a></div>
+        <div><a href="#about" class="btn-box">More About Me</a></div>
+    </div>
+    <div class="home-background">
+      <video autoplay loop muted playsinline>
+        <source src="./resources/aj-logo.mp4" type="video/mp4">
+      </video>
     </div>
   </section>
 
   <section class="about" id="about">
     <div class="about-img">
-      <img src="./resources/aj.jpg" alt="aj" />
+      <img src="./resources/aj-background-img.png" alt="aj" />
     </div>
     <div class="about-text">
       <h2>About <span>Me</span></h2>
@@ -103,12 +129,18 @@
 
       </div>
   </section>
-  <h1 class="sub-title">My <span>Skills</span></h1>
-  <section class="section">
-    <div class="container1" id="skills">
-      <h1 class="heading1">Technical Skills</h1>
-      <div class="Technical-bars">
 
+  <section class="section" id="skills">
+    <div class="row">
+      <div class="col">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="Technical-bars col-6">
+        <h1 class="heading1">Technical Skills</h1>
         <div class="bar">
           <i class='bx bxl-html5' style="color:#ff8d00"></i>
           <div class="info">
@@ -191,13 +223,11 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container1">
-      <h1 class="heading">
-        Professional Skills
-      </h1>
-      <div class="radial-bars">
+      <div class=" radial-bars col-6">
+
+        <h1 class="heading">Professional Skills</h1>
+
         <div class="radial-bar">
           <svg class="radial-svg" viewBox="0 0 200 200">
             <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
@@ -239,42 +269,47 @@
           </div>
         </div>
       </div>
+    </div>
+
   </section>
 
   <section>
     <div id="projects" id="Portfolio">
       <div class="main-text" id="project">
         <h2 class="sub-title">Latest <span>Projects</span></h2>
-      
+
         <div class="portfolio-content">
           <div class="row">
-            <img src="./resources/aj.jpg" alt="">
+            <img src="./resources/Project1.png" alt="">
             <div class="layer">
               <h5>UI/UX Design</h5>
-              <p>UI/UX designer with a strong focus on creating intuitive and engaging user experiences, I have successfully
+              <p>UI/UX designer with a strong focus on creating intuitive and engaging user experiences, I have
+                successfully
                 designed and developed various projects, ranging from e-commerce platforms to mobile fitness apps and
                 banking dashboards.</p>
-                <a href="#"><i class='bx bx-link-external bx-rotate-90' style='color:#0c2af0' ></i></a>
+              <a href="#"><i class='bx bx-link-external bx-rotate-90' style='color:#0c2af0'></i></a>
             </div>
           </div>
           <div class="row">
-            <img src="./resources/aj.jpg" alt="">
+            <img src="./resources/Project2.png" alt="">
             <div class="layer">
               <h5>UI/UX Design</h5>
-              <p>UI/UX designer with a strong focus on creating intuitive and engaging user experiences, I have successfully
+              <p>UI/UX designer with a strong focus on creating intuitive and engaging user experiences, I have
+                successfully
                 designed and developed various projects, ranging from e-commerce platforms to mobile fitness apps and
                 banking dashboards.</p>
-                <a href="#"><i class='bx bx-link-external bx-rotate-90' style='color:#0c2af0' ></i></a>
+              <a href="#"><i class='bx bx-link-external bx-rotate-90' style='color:#0c2af0'></i></a>
             </div>
           </div>
           <div class="row">
-            <img src="./resources/aj.jpg" alt="">
+            <img src="./resources/Project3.png" alt="">
             <div class="layer">
               <h5>UI/UX Design</h5>
-              <p>UI/UX designer with a strong focus on creating intuitive and engaging user experiences, I have successfully
+              <p>UI/UX designer with a strong focus on creating intuitive and engaging user experiences, I have
+                successfully
                 designed and developed various projects, ranging from e-commerce platforms to mobile fitness apps and
                 banking dashboards.</p>
-                <a href="#"><i class='bx bx-link-external bx-rotate-90' style='color:#0c2af0' ></i></a>
+              <a href="#"><i class='bx bx-link-external bx-rotate-90' style='color:#0c2af0'></i></a>
             </div>
           </div>
         </div>
@@ -288,23 +323,23 @@
         designed and developed various projects, ranging from e-commerce platforms to mobile fitness apps and
         banking dashboards.</p>
 
-        <div class="contact-list">
-          <li><i class='bx bxs-send'></i>ajjayyaswamy17@gmail.com</li>
-          <li><i class='bx bxs-phone' ></i>+918197123049</li>
-        </div>
-        <div class="contact-icons">
-          <a href="0" style="--i:1"><i class="bx bxl-facebook-square"></i></a>
-          <a href="0" style="--i:2"><i class="bx bxl-linkedin-square"></i></a>
-          <a href="0" style="--i:3"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="0" style="--i:4"><i class="bx bxl-whatsapp-square"></i></a>
-        </div>
+      <div class="contact-list">
+        <li><i class='bx bxs-send'></i>ajjayyaswamy17@gmail.com</li>
+        <li><i class='bx bxs-phone'></i>+918197123049</li>
+      </div>
+      <div class="contact-icons">
+        <a href="0" style="--i:1"><i class="bx bxl-facebook-square"></i></a>
+        <a href="0" style="--i:2"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="0" style="--i:3"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="0" style="--i:4"><i class="bx bxl-whatsapp-square"></i></a>
+      </div>
     </div>
 
     <div class="contact-form">
       <form action="">
-        <input type="text" placeholder="Enter Your Name" required/>
-        <input type="email" placeholder="Enter Your Email" required/>
-        <input type="" placeholder="Enter Your Subject"/>
+        <input type="text" placeholder="Enter Your Name" required />
+        <input type="email" placeholder="Enter Your Email" required />
+        <input type="" placeholder="Enter Your Subject" />
         <textarea name="" id="" cols="40" rows="10" placeholder="Enter your Queries"></textarea>
         <input type="submit" value="submit" class="send">
       </form>
@@ -315,7 +350,7 @@
   <div class="last-text">
     <p>developed by Ajjayyaswamy @2025</p>
   </div>
-  <a href="#" target="_blank" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+  <a href="#" target="" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
 
   <script src="./script.js"></script>
